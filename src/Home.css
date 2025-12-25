@@ -1,0 +1,107 @@
+/* Container */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 20px;
+  background: linear-gradient(
+    120deg,
+    #2b214b,   /* dark purple (left) */
+    #1f4564,   /* blue (center) */
+    #14697d    /* teal (right) */
+  );
+
+  background-size: 200% 200%;
+  animation: awsMove 12s ease-in-out infinite;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@keyframes awsMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media (min-width: 1600px) {
+  .home-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+
+/* Header */
+.home-header {
+  text-align: center;
+  color: yellow;
+  margin-bottom: 60px;
+  margin-top: 30PX;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.home-header p {
+  font-size: 1.15rem;
+  color: white;
+  opacity: 0.95;
+}
+
+/* Card Layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* Card */
+.home-card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.home-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 30px 55px rgba(0, 0, 0, 0.35);
+}
+
+/* Icons */
+.card-icon {
+  font-size: 3.2rem;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+}
+
+/* Card Text */
+.home-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: yellow;
+  font-weight: 600;
+}
+
+.home-card p {
+  font-size: 1rem;
+  color: #eaeaea;
+  line-height: 1.6;
+}

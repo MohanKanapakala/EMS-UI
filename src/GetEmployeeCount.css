@@ -1,0 +1,44 @@
+.count-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: #f9fbff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fetch-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.fetch-btn:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.count-display {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9f3ff;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.count-display span {
+  color: #007bff;
+}

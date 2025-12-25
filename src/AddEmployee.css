@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  padding-top: 50px;
+  /* Remove flex layout */
+}
+
+.edit-card {
+  width: 95%;           /* almost full width */
+  max-width: 1100px;    /* much wider on large screens */
+  margin: 50px auto;    /* horizontally centered */
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  padding: 10px 12px;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13,110,253,0.3);
+}
+
+.btn-custom {
+  min-width: 120px;
+  transition: transform 0.2s;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 1200px) {
+  .edit-card {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .edit-card {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edit-card {
+    width: 95%;
+    padding: 30px;
+  }
+}
