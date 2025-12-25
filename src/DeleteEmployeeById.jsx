@@ -26,7 +26,7 @@ const DeleteEmployeeById = () => {
       setLoading(true);
       setMessage("");
 
-      await API.delete(`/employees/${empId}`);
+      await API.delete(`/${empId}`);
 
       setMessage(`✅ Employee with ID ${empId} deleted successfully.`);
       setEmpId("");
